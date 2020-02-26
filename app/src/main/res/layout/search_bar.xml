@@ -18,15 +18,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:paddingBottom="4dp"
-    android:paddingEnd="16dp"
-    android:paddingStart="16dp"
-    android:paddingTop="4dp">
+    android:paddingBottom="@dimen/container_padding_top_bottom"
+    android:paddingEnd="@dimen/container_padding_start_end"
+    android:paddingStart="@dimen/container_padding_start_end"
+    android:paddingTop="@dimen/container_padding_top_bottom">
 
     <!-- Dummy view to catch focus -->
     <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/zero"
         android:focusable="true"
         android:focusableInTouchMode="true" />
 
@@ -34,11 +34,14 @@
         android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="2dp"
+        android:layout_marginStart="@dimen/search_bar_margin"
+        android:layout_marginTop="@dimen/search_bar_margin"
+        android:layout_marginEnd="@dimen/search_bar_margin"
+        android:layout_marginBottom="@dimen/search_bar_margin"
         app:cardBackgroundColor="@color/card_background"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="1dp"
-        app:contentPadding="8dp">
+        app:cardCornerRadius="@dimen/search_bar_radius"
+        app:cardElevation="@dimen/search_bar_elevation"
+        app:contentPadding="@dimen/search_bar_content_padding">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -57,8 +60,8 @@
                 android:id="@+id/secure"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_toEndOf="@id/incognito"
                 android:layout_alignWithParentIfMissing="true"
+                android:layout_toEndOf="@id/incognito"
                 android:adjustViewBounds="true"
                 android:background="?selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_lock"
@@ -69,21 +72,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignWithParentIfMissing="true"
-                android:layout_toEndOf="@id/secure"
                 android:layout_toStartOf="@+id/search_menu"
+                android:layout_toEndOf="@id/secure"
                 android:background="@null"
                 android:completionThreshold="1"
                 android:dropDownAnchor="@id/cardview"
-                android:dropDownVerticalOffset="0dp"
+                android:dropDownVerticalOffset="@dimen/zero"
                 android:fadingEdge="vertical"
                 android:imeOptions="actionSearch"
                 android:inputType="textUri"
                 android:maxLines="1"
                 android:nextFocusLeft="@id/url_bar"
                 android:nextFocusUp="@id/url_bar"
-                android:paddingStart="4dp"
-                android:popupElevation="2dp"
+                android:paddingStart="@dimen/url_bar_padding_start"
                 android:popupBackground="@color/primary"
+                android:popupElevation="@dimen/url_bar_elevation"
                 android:selectAllOnFocus="true"
                 android:textColor="@color/inverted"
                 tools:ignore="RtlSymmetry" />
@@ -95,7 +98,7 @@
                 android:layout_alignParentEnd="true"
                 android:adjustViewBounds="true"
                 android:background="?selectableItemBackgroundBorderless"
-                android:padding="8dp"
+                android:padding="@dimen/search_menu_padding"
                 android:src="@drawable/ic_menu" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

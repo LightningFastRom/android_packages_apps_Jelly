@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common ID'S -->
+    <item type="id" name="cardview" />
+    <item type="id" name="key" />
+    <item type="id" name="value" />
+    <item type="id" name="title" />
+
+    <!-- search_bar.xml -->
+    <item type="id" name="incognito" />
+    <item type="id" name="secure" />
+    <item type="id" name="url_bar" />
+    <item type="id" name="search_menu" />
+
+    <!-- search_page.xml -->
+    <item type="id" name="search_menu_edit" />
+    <item type="id" name="search_status" />
+    <item type="id" name="find_separator" />
+    <item type="id" name="search_menu_prev" />
+    <item type="id" name="search_menu_next" />
+    <item type="id" name="search_menu_cancel" />
+
+    <!-- item_suggestion.xml -->
+    <item type="id" name="suggestionIcon" />
+
+</resources>
