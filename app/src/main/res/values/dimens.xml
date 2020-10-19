@@ -16,4 +16,47 @@
 <resources>
     <dimen name="delete_margin">12dp</dimen>
     <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="container_padding_start_end">16dp</dimen>
+    <dimen name="container_padding_top_bottom">4dp</dimen>
+
+    <!-- search_bar.xml -->
+    <!-- Search Bar -->
+    <dimen name="search_bar_margin">2dp</dimen>
+    <dimen name="search_bar_radius">24dp</dimen>
+    <dimen name="search_bar_elevation">2dp</dimen>
+    <dimen name="search_bar_content_padding">4dp</dimen>
+
+    <!-- URL Bar -->
+    <dimen name="url_bar_elevation">2dp</dimen>
+    <dimen name="url_bar_padding_start">4dp</dimen>
+
+    <!-- Search Menu -->
+    <dimen name="search_menu_padding">8dp</dimen>
+
+    <!-- search_page.xml -->
+    <!-- Search Page -->
+    <dimen name="search_page_margin">2dp</dimen>
+    <dimen name="search_page_elevation">2dp</dimen>
+    <dimen name="search_page_content_padding">2dp</dimen>
+
+    <!-- Search Menu Edit -->
+    <dimen name="search_menu_edit_padding_start">4dp</dimen>
+
+    <!-- Search Status -->
+    <dimen name="search_status_margin_end">16dp</dimen>
+    <dimen name="search_status_margin_start">12dp</dimen>
+    <dimen name="search_status_textSize">12sp</dimen>
+
+    <!-- Find Separator -->
+    <dimen name="find_separator_width">1dp</dimen>
+    <dimen name="find_separator_margin_top_bottom">8dp</dimen>
+	
+	<!-- Find Separator -->
+	<item name="find_separator_alpha" format="float" type="dimen">0.</item>
+    
+    <!-- item_suggestion.xml -->
+    <dimen name="suggestion_container_min_height">60dp</dimen>
+    <dimen name="suggestionIcon_size">24dp</dimen>
+
 </resources>
